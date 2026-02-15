@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise ❤️</title>
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: black;
+        color: white;
+        padding: 20px;
+        min-height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* 🎂 Floating Cakes Background */
+    body::before {
+        content: "🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂 🎂";
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        font-size: 40px;
+        line-height: 90px;
+        opacity: 0.15;
+        animation: floatCakes 15s linear infinite;
+        pointer-events: none;
+        white-space: pre-wrap;
+    }
+
+    @keyframes floatCakes {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(50%);
+        }
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .quote {
+        max-width: 700px;
+        margin: 20px auto;
+        font-size: 18px;
+        line-height: 1.6;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 1;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: white;
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .gallery {
+        margin-top: 30px;
+        display: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    .gallery img {
+        width: 90%;
+        max-width: 280px;
+        height: auto;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px white;
+        transition: transform 0.4s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    /* 📱 Mobile Responsive */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        .quote {
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+
+<h1>🎉 Happy Birthday My Special One 🎉</h1>
+<p>Click below for a surprise ❤️</p>
+
+
+
+<div class="quote">
+    ❤️ ❤️❤️ Happiest birthday Arshikaaaaaa  jiiiiiiii  . i think that this is ur 17 bday . may ur bday is full happiness without any tension ...
+	ese hi aaap haste rhe muskrate rhe or grow krte rhe ...
+	aapke paper h naaa to ab jyada khush na hoo or paper pe focus kro okiii jiiiii..
+	byeeeeeeeeeeeee deviiii jiiiiiii....✨🎂
+	
+</div>
+
+
+
+
+
+
+
+<button onclick="showPhotos()"> !!!!!!! CLICK PLEASE ❤️ !!!!!!!</button>
+
+<div class="gallery" id="photoGallery">
+    <img src=images\photo1.jpeg>
+    <img src=images\photo2.jpeg>
+    <img src=images\photo3.jpeg>
+    <img src=images\photo4.jpeg>
+<img src=images\photo5.jpeg>
+<img src=images\photo6.jpeg>
+<img src=images\photo7.jpeg>
+
+</div>
+
+<script>
+function showPhotos() {
+    document.getElementById("photoGallery").style.display = "block";
+}
+</script>
+
+</body>
+</html>
